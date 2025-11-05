@@ -11,23 +11,26 @@ const Products = () => {
     const [selectCategory, setselectCategory] = useState("All")
     const [showAll, setShowAll] = useState(false);
     
-
-
+    
+    
     useEffect(()=>{
-        fetch('/Data.json')
-        .then((res)=> res.json())
-        .then((data)=> setproduct(data), toast.success('Successfully toasted!'))
-        .catch((error)=>{
-            console.log(error);
-            toast.error("Failed To Products Data!!")
-        })
-        .finally(()=> setloading(false))
+      fetch('/Data.json')
+      .then((res)=> res.json())
+      .then((data)=> setproduct(data), toast.success('Successfully !'))
+      .catch((error)=>{
+        console.log(error);
+        toast.error("Failed To Products Data!!")
+      })
+      .finally(()=> setloading(false))
     },[])
     
     const catagories = ["All", ...new Set(product.map(data=> data.category))]
     const filterProducts = selectCategory ==="All" ? product :product.filter(p => p.category === selectCategory);
     const visibleProduct = showAll ? filterProducts : filterProducts.slice(0,8);
-  return (
+    const rattings = product.filter(data=>
+      data.rating > 7
+    )
+    return (
     <div className='w-11/12 mx-auto py-15'>
       <h1 className='text-lg lg:text-xl'>RECOMMENDED FOR YOU</h1>
       <CatagoriesNab catagories={catagories}
@@ -69,7 +72,7 @@ const Products = () => {
           <p className='text-gray-400 text-center'>No Products Found</p>
         )
       }
-      <CardSlider moviecard={product}></CardSlider>
+      <CardSlider moviecard={rattings}></CardSlider>
     </div>
   )
 }

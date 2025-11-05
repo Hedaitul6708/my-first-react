@@ -7,12 +7,13 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import ProductCard from "./ProductCard";
 
 export default function CardSlider({moviecard}) {
   // 👉 তোমার state যেখানে সব card data আছে
    const cards = moviecard;
   return (
-    <div className="w-11/12">
+    <div className="w-11/12 mt-10">
       <Swiper
         slidesPerView={1}
         spaceBetween={20}
@@ -33,17 +34,7 @@ export default function CardSlider({moviecard}) {
       >
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
-            <div className=" hover:scale-105 transition-transform duration-300">
-              <img
-                src={card.image}
-                alt={card.title}
-                className=""
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
-                <p className="text-gray-600 text-sm">{card.description}</p>
-              </div>
-            </div>
+            <ProductCard product={card} />
           </SwiperSlide>
         ))}
       </Swiper>

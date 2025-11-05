@@ -4,8 +4,8 @@ import { FaHeartCircleCheck } from 'react-icons/fa6';
 
 const ProductCard = ({product}) => {
   return (
-    <div className=''>
-      <div className=' '>
+    <div>
+      <div>
       <img src={product.image} alt={product.title} 
       className='h-60 mx-auto object-contain rounded-lg transition-transform duration-300 hover:scale-110'
       />
