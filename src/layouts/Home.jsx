@@ -1,12 +1,18 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import ImageCarousel from '../components/ImageCarousel'
+import Products from '../components/Products'
+import { Toaster } from 'react-hot-toast'
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
-      <Navbar></Navbar>
-      <ImageCarousel></ImageCarousel>
-    </div>
+    <>
+    <Navbar></Navbar>
+    <ImageCarousel></ImageCarousel>
+    <Products></Products>
+    <Toaster position='top-right'></Toaster>
+    </>
   )
 }
+
+export default Home
