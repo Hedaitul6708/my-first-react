@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 
-// Import Swiper styles
+
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -10,7 +10,7 @@ import "swiper/css/autoplay";
 import ProductCard from "./ProductCard";
 
 export default function CardSlider({moviecard}) {
-  // 👉 তোমার state যেখানে সব card data আছে
+
    const cards = moviecard;
   return (
     <div className="w-11/12 mt-10">
@@ -23,7 +23,7 @@ export default function CardSlider({moviecard}) {
         }}
         freeMode={true}
         autoplay={{
-          delay: 2500, // প্রতি 2.5 সেকেন্ডে স্লাইড হবে
+          delay: 2500,
           disableOnInteraction: false,
         }}
         pagination={{

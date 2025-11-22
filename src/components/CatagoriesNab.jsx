@@ -4,7 +4,7 @@ import Products from './Products'
  const CatagoriesNab = ({catagories, selectCategory,setselectCategory}) => {
     
   return (
-    <div className='flex flex-wrap justify-start gap3 md:gap-5 py-8'>
+    <div className='flex flex-wrap justify-start gap3 md:gap-5 py-8 sm:gap-3'>
       {
         catagories.map(uniq=> ( <button
         key={uniq}

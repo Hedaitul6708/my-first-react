@@ -16,9 +16,8 @@ const Products = () => {
     useEffect(()=>{
       fetch('/Data.json')
       .then((res)=> res.json())
-      .then((data)=> setproduct(data), toast.success('Successfully !'))
+      .then((data)=> {setproduct(data); toast.success('Successfully !')})
       .catch((error)=>{
-        console.log(error);
         toast.error("Failed To Products Data!!")
       })
       .finally(()=> setloading(false))

@@ -1,16 +1,16 @@
 import React from "react";
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-// Import required modules
+
 import { Pagination, Autoplay } from "swiper/modules";
 
-// Import images from assets folder
+
 import slider1 from "../assets/aa.jpg";
 import slider2 from "../assets/bb.jpg";
 import slider3 from "../assets/fa.jpg";
@@ -18,11 +18,11 @@ import slider4 from "../assets/fd.jpg";
 import slider5 from "../assets/qq.jpg";
 
 
-// ✅ Custom function name
+
 export default function ImageCarousel() {
   const images = [slider1, slider2, slider3, slider4, slider5];
 
-  // Inline styles for slides and pagination
+
   const swiperStyles = {
     width: "100%"
 
@@ -51,7 +51,7 @@ export default function ImageCarousel() {
 
   return (
     <>
-      {/* Inline style tag for pagination and responsive tweaks */}
+      {}
       <style>{paginationStyles}</style>
 
       <Swiper
@@ -60,11 +60,11 @@ export default function ImageCarousel() {
           clickable: true,
         }}
         autoplay={{
-          delay: 3000, // 3 seconds
+          delay: 3000,
           disableOnInteraction: false,
         }}
         loop={true}
-        slidesPerView={1} // Show 1 slide at a time
+        slidesPerView={1}
         modules={[Pagination, Autoplay]}
         style={swiperStyles}
       >
