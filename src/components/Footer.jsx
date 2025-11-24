@@ -5,7 +5,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <footer className="footer sm:footer-horizontal p-15">
+    <footer className="footer sm:footer-horizontal justify-around p-15">
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Branding</a>
@@ -34,8 +34,8 @@ const Footer = () => {
         <input
           type="text"
           placeholder="username@site.com"
-          className="input input-bordered join-item" />
-        <button className="btn btn-primary join-item">Subscribe</button>
+          className="input input-bordered join-ite" />
+        <button className="btn btn-primary hover:bg-[#FF6633]">Subscribe</button>
       </div>
     </fieldset>
 

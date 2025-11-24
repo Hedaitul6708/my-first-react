@@ -1,17 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination, Autoplay } from "swiper/modules";
-
+import { FreeMode, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import ProductCard from "./ProductCard";
 
-export default function CardSlider({moviecard}) {
+export default function CardSlider({ moviecard }) {
+  const cards = moviecard;
 
-   const cards = moviecard;
   return (
     <div className="w-11/12 mt-10">
       <Swiper
@@ -26,11 +24,7 @@ export default function CardSlider({moviecard}) {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination, Autoplay]}
-        className=""
+        modules={[FreeMode, Autoplay]}
       >
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
