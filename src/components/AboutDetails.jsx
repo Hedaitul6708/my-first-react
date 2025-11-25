@@ -17,10 +17,10 @@ export default function AboutDetails() {
           </div>
         </div>
         <div>
-          <img src={BG} alt="" className=' mt-10' />
+          <img src={BG} alt="" className=' mt-10 rounded-md' />
         </div>
         <div className='ml-10 mt-13'>
-          <h2 className='font-bold mb-4'>About Company</h2>
+          <h2 className='font-bold mb-4 text-xl'>About Company</h2>
           <p className='text-white/50'>With a slim design, a vibrant entertainment <br /> system, and outstanding performance, the new <br /> Galaxy Tab A7 is a stylish new companion for <br /> your life.Dive head-first into the things you love,<br /> and easily share your favorite moments. Learn, <br /> explore, connect and be inspired.</p>
         </div>
 

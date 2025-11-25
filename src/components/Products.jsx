@@ -59,7 +59,7 @@ const Products = () => {
 
   return (
     <div className="w-11/12 mx-auto py-15">
-      <h1 className="text-lg lg:text-xl">RECOMMENDED FOR YOU</h1>
+      <h1 className="text-lg lg:text-xl text-[#ff6633]">RECOMMENDED FOR YOU</h1>
 
       <CatagoriesNab
         catagories={categories}

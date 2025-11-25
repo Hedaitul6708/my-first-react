@@ -4,7 +4,7 @@ export default function ContactDetails() {
     return (
         <div className="px-4 sm:px-6 lg:px-16 py-10">
             
-            {/* Contact Form */}
+           
             <div className="max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-md text-black">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">
                     Contact Us
@@ -12,7 +12,7 @@ export default function ContactDetails() {
 
                 <form className="space-y-5 text-black">
 
-                    {/* Name */}
+                    
                     <div>
                         <label className="block mb-1 text-gray-700 font-medium">Name</label>
                         <input
@@ -23,7 +23,7 @@ export default function ContactDetails() {
                         />
                     </div>
 
-                    {/* Email */}
+                    
                     <div>
                         <label className="block mb-1 text-gray-700 font-medium">Email</label>
                         <input
@@ -34,7 +34,6 @@ export default function ContactDetails() {
                         />
                     </div>
 
-                    {/* Phone */}
                     <div>
                         <label className="block mb-1 text-gray-700 font-medium">Phone</label>
                         <input
@@ -45,7 +44,7 @@ export default function ContactDetails() {
                         />
                     </div>
 
-                    {/* Textarea */}
+                    
                     <div>
                         <label className="block mb-1 text-gray-700 font-medium">Message</label>
                         <textarea
@@ -56,7 +55,7 @@ export default function ContactDetails() {
                         ></textarea>
                     </div>
 
-                    {/* Submit Button full width */}
+                    
                     <button
                         type="submit"
                         className="w-full bg-indigo-600 text-white p-3 rounded-xl 
@@ -65,7 +64,7 @@ export default function ContactDetails() {
                         Send Message
                     </button>
 
-                    {/* Small submit (centered) */}
+                    
                     <div className="text-center">
                         <button
                             type="submit"
@@ -79,7 +78,7 @@ export default function ContactDetails() {
                 </form>
             </div>
 
-            {/* Google Map */}
+            
             <div className="mt-10 rounded-xl overflow-hidden border">
                 <iframe
                     title="map"

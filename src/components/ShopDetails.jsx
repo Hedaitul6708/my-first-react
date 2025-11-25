@@ -68,16 +68,16 @@ export default function ShopDetails() {
           <p className="text-[15px] mt-2 flex justify-center sm:justify-start gap-5">$44.00 <s>$55.00</s></p>
         </div>
 
-        <div className="w-[250px]">
+        <div className="">
           <div className="relative overflow-hidden group">
 
             <img
-              src={bGs}
+              src={bgh}
               alt=""
-              className="w-full"
+              className="w-full rounded-md"
             />
 
-            <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-3 font-semibold opacity-0 group-hover:opacity-100 hover:bg-amber-400 transition-all duration-300">
+            <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-3 font-semibold opacity-0 group-hover:opacity-100 hover:bg-[#ff6633] transition-all duration-300 rounded-md">
               Add To Cart
             </div>
 
@@ -87,6 +87,65 @@ export default function ShopDetails() {
           <h3 className="text-[16px] hover:text-[#ef6cc2]">Powder Creamy Natural</h3>
           <p className="text-[15px] mt-2 flex gap-5">$102.00 <s>$226.00</s></p>
         </div>
+        <div className="">
+          <div className="relative overflow-hidden group">
+
+            <img
+              src={bgf}
+              alt=""
+              className="w-full rounded-md"
+            />
+
+            <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-3 font-semibold opacity-0 group-hover:opacity-100 hover:bg-[#ff6633] transition-all duration-300 rounded-md">
+              Add To Cart
+            </div>
+
+          </div>
+
+          <p className="text-white/50 text-sm mt-3">Physicians</p>
+          <h3 className="text-[16px] hover:text-[#ef6cc2]">Powder Creamy Natural</h3>
+          <p className="text-[15px] mt-2 flex gap-5">$102.00 <s>$226.00</s></p>
+        </div>
+        <div className="">
+          <div className="relative overflow-hidden group">
+
+            <img
+              src={bgc}
+              alt=""
+              className="w-full rounded-md"
+            />
+
+            <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-3 font-semibold opacity-0 group-hover:opacity-100 hover:bg-[#ff6633] transition-all duration-300 rounded-md">
+              Add To Cart
+            </div>
+
+          </div>
+
+          <p className="text-white/50 text-sm mt-3">Physicians</p>
+          <h3 className="text-[16px] hover:text-[#ef6cc2]">Powder Creamy Natural</h3>
+          <p className="text-[15px] mt-2 flex gap-5">$102.00 <s>$226.00</s></p>
+        </div>
+        <div className="">
+          <div className="relative overflow-hidden group">
+
+            <img
+              src={bGs}
+              alt=""
+              className="w-full rounded-md"
+            />
+
+            <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-3 font-semibold opacity-0 group-hover:opacity-100 hover:bg-[#ff6633] transition-all duration-300 rounded-md">
+              Add To Cart
+            </div>
+
+          </div>
+
+          <p className="text-white/50 text-sm mt-3">Physicians</p>
+          <h3 className="text-[16px] hover:text-[#ef6cc2]">Powder Creamy Natural</h3>
+          <p className="text-[15px] mt-2 flex gap-5">$102.00 <s>$226.00</s></p>
+        </div>
+
+        
 
 
       </div>
